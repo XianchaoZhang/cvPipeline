@@ -1,0 +1,9 @@
+<cvPipeline name="imgViewer">
+  <Processor class="VideoCapture" name="cap">
+    <Property name="deviceIndex" value="0"/>
+  </Processor>
+  <Processor class="ImageWindow" name="window">
+    <Property name="windowName" value="cvImagePipeline"/>
+    <Property name="showFPS" value="1"/>
+  </Processor>
+</cvPipeline>
