@@ -24,9 +24,9 @@
 #endif
 
 #ifdef BUILD_DLL
-    #define SHARED //EXPORT
+    #define SHARED EXPORT
 #else
-    #define SHARED //IMPORT
+    #define SHARED IMPORT
 #endif
 
 namespace cvPipeline{

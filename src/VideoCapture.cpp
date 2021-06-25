@@ -1,6 +1,6 @@
 #if !defined(_MSC_VER)
 #include <unistd.h>
-#define _sleep(ms) usleep((ms) * 1000)
+//#define _sleep(ms) usleep((ms) * 1000)
 #endif
 #include "VideoCapture.h"
 
@@ -92,7 +92,8 @@ namespace cvPipeline {
                 do{
                     videoCapture >> mat;
                     frameNumber++;
-                    _sleep(10);
+                    //_sleep(10);
+                    sleep(10*1000);
                 }while(mat.empty());
                 captureStart = true;
                 captureEmpty = false;
